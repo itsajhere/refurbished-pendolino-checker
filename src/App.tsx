@@ -40,7 +40,7 @@ function App() {
 							const trainSearchRequest = await fetch(
 								`https://www.realtimetrains.co.uk/search/detailed/gb-nr:${station.toUpperCase()}/${
 									date.toISOString().split("T")[0]
-								}/0200-0159?stp=WVS&show=all&order=wtt&toc=VT`}
+								}/0200-0159?stp=WVS&show=all&order=wtt&toc=VT`
 							);
 							const trainSearchString =
 								await trainSearchRequest.text();
