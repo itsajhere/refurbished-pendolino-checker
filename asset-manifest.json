@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/refurbished-pendolino-checker/static/js/main.4ea6fe2c.js",
+    "main.js": "/refurbished-pendolino-checker/static/js/main.623c2f8b.js",
     "static/js/787.b7614824.chunk.js": "/refurbished-pendolino-checker/static/js/787.b7614824.chunk.js",
     "index.html": "/refurbished-pendolino-checker/index.html",
-    "main.4ea6fe2c.js.map": "/refurbished-pendolino-checker/static/js/main.4ea6fe2c.js.map",
+    "main.623c2f8b.js.map": "/refurbished-pendolino-checker/static/js/main.623c2f8b.js.map",
     "787.b7614824.chunk.js.map": "/refurbished-pendolino-checker/static/js/787.b7614824.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.4ea6fe2c.js"
+    "static/js/main.623c2f8b.js"
   ]
 }
