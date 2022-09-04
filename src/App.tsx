@@ -5,7 +5,6 @@ import Service from "./Service";
 function App() {
 	const [railServices, setRailServices] = useState<Service[]>([]);
 	const [searching, setSearching] = useState<boolean>(false);
-	const [everSearched, setEverSearched] = useState<boolean>(false);
 	const [station, setStation] = useState<string>("");
 
 	return (
@@ -32,17 +31,16 @@ function App() {
 						type="submit"
 						className="btn btn-primary"
 						onClick={async () => {
-							if (station.length != 3) return;
+							if (station.length !== 3) return;
 
 							setSearching(true);
-							setEverSearched(true);
 							setRailServices([]);
 
 							const date = new Date();
 							const trainSearchRequest = await fetch(
 								`https://www.realtimetrains.co.uk/search/detailed/gb-nr:${station.toUpperCase()}/${
 									date.toISOString().split("T")[0]
-								}/0200-0159?stp=WVS&show=all&order=wtt&toc=VT`
+								}/0200-0159?stp=WVS&show=all&order=wtt&toc=VT`}
 							);
 							const trainSearchString =
 								await trainSearchRequest.text();
